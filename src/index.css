@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-*: initial;
+  --color-html: #ff7e35;
+  --color-css: #2fd887;
+  --color-green: #26d982;
+  --color-purple: #a729f5;
+  --color-red: #ee5454;
+  --color-blue: #306aff;
+  --color-neutral-100: #ffffff;
+  --color-neutral-200: #f4f6fa;
+  --color-neutral-300: #abc1e1;
+  --color-neutral-400: #3b4d66;
+  --color-neutral-500: #303d50;
+
+  --shadow-std: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+  --font-rubik: "Rubik", sans-serif;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-weight: 400;
+  src:
+    url("/fonts/rubik-400-normal.woff2") format("woff2"),
+    url("/fonts/rubik-400-normal.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-weight: 500;
+  src:
+    url("/fonts/rubik-500-normal.woff2") format("woff2"),
+    url("/fonts/rubik-500-normal.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-weight: 600;
+  src:
+    url("/fonts/rubik-600-normal.woff2") format("woff2"),
+    url("/fonts/rubik-600-normal.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-weight: 700;
+  src:
+    url("/fonts/rubik-700-normal.woff2") format("woff2"),
+    url("/fonts/rubik-700-normal.woff") format("woff");
+}
+
+progress {
+  background-color: var(--color-neutral-100);
+  color: var(--color-purple);
+  border-radius: 999rem;
+  width: 100%;
+  height: 0.5rem;
+}
+
+progress::-webkit-progress-bar {
+  background: var(--color-neutral-100);
+  width: 100%;
+}
+
+progress::-webkit-progress-value {
+  background: var(--color-purple);
+  border-radius: 999rem;
+  height: 0.5rem;
+}
+
+progress::-moz-progress-bar {
+  background: var(--color-purple);
+  border-radius: 999rem;
+  height: 0.5rem;
+}
